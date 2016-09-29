@@ -1,0 +1,1098 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A6A22CF8-C41A-3622-9D83-0012BF4027EB}</ProjectGuid>
+    <RootNamespace>MultiVideoDemo</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>out\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>MultiVideoDemo</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>out\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>MultiVideoDemo</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">out\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MultiVideoDemo</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">out\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MultiVideoDemo</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.;ffmpeg\include;include;C:\Qt\Qt5.5.1\5.5\msvc2013\include;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtMultimedia;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtANGLE;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtNetwork;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtCore;moc;ui;C:\Qt\Qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_MULTIMEDIA_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Qt\Qt5.5.1\5.5\msvc2013\lib\qtmain.lib;shell32.lib;C:/Qt/Qt5.5.1/5.5/msvc2013/lib\Qt5Core.lib;ws2_32.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;log4cplus.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Widgets.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Multimedia.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Gui.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Network.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Qt\Qt5.5.1\5.5\msvc2013\lib;C:/Qt/Qt5.5.1/5.5/msvc2013/lib;.\ffmpeg\lib;.\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <LargeAddressAware>true</LargeAddressAware>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\MultiVideoDemo.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_MULTIMEDIA_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.;ffmpeg\include;include;C:\Qt\Qt5.5.1\5.5\msvc2013\include;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtMultimedia;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtANGLE;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtNetwork;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtCore;moc;ui;C:\Qt\Qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_WIDGETS_LIB;QT_MULTIMEDIA_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Qt\Qt5.5.1\5.5\msvc2013\lib\qtmaind.lib;shell32.lib;C:/Qt/Qt5.5.1/5.5/msvc2013/lib\Qt5Cored.lib;ws2_32.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;log4cplusD.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Widgetsd.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Multimediad.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Guid.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Networkd.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Qt\Qt5.5.1\5.5\msvc2013\lib;C:/Qt/Qt5.5.1/5.5/msvc2013/lib;.\ffmpeg\lib;.\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <LargeAddressAware>true</LargeAddressAware>
+      <OutputFile>$(OutDir)\MultiVideoDemo.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_WIDGETS_LIB;QT_MULTIMEDIA_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="multiVideo\Capture.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="multiVideo\fec.c" />
+    <ClCompile Include="multiVideo\FecPad.cpp" />
+    <ClCompile Include="multiVideo\MultiCast.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="multiVideo\msock.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HLog.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mainwindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="multiVideo\fec.h" />
+    <ClInclude Include="multiVideo\FecPad.h" />
+    <ClInclude Include="\ffmpeg\include\libavcodec\avcodec.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavdevice\avdevice.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavformat\avformat.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavformat\version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\attributes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\avconfig.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\avutil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\buffer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\channel_layout.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\common.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\cpu.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\dict.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\frame.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\log.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\opt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\pixfmt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\rational.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\samplefmt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\time.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libswscale\swscale.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\config\macosx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\config\win32.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\config\windowsh-inc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\helpers\lockfile.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\helpers\pointer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\helpers\property.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\helpers\snprintf.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\helpers\thread-config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\helpers\timehelper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\internal\internal.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\spi\appenderattachable.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\spi\filter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\spi\loggerfactory.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\spi\loggingevent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\thread\impl\tls.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\thread\syncprims.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\thread\threads.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\appender.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\config.hxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\configurator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\layout.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\logger.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\loggingmacros.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\loglevel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\mdc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\ndc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\streams.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\tchar.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\tracelogger.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\tstring.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_active.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_audio.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_byteorder.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_cdrom.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_config_dreamcast.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_config_macos.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_config_macosx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_config_minimal.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_config_nds.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_config_os2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_config_symbian.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_config_win32.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_copying.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_cpuinfo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_endian.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_error.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_events.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_getenv.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_joystick.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_keyboard.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_keysym.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_loadso.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_mouse.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_mutex.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_name.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_opengl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_platform.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_quit.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_rwops.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_stdinc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_syswm.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_thread.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_timer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_video.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\begin_code.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\close_code.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\avcodec.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\avdct.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\avfft.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\d3d11va.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\dirac.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\dv_profile.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\dxva2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\jni.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\mediacodec.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\qsv.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\vaapi.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\vda.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\vdpau.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\videotoolbox.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\vorbis_parser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\xvmc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavdevice\avdevice.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavdevice\version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavfilter\avfilter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavfilter\avfiltergraph.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavfilter\buffersink.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavfilter\buffersrc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavfilter\version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavformat\avformat.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavformat\avio.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavformat\version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\adler32.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\aes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\aes_ctr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\attributes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\audio_fifo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\avassert.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\avconfig.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\avstring.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\avutil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\base64.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\blowfish.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\bprint.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\bswap.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\buffer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\camellia.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\cast5.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\channel_layout.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\common.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\cpu.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\crc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\des.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\dict.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\display.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\downmix_info.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\error.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\eval.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\ffversion.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\fifo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\file.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\frame.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\hash.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\hmac.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\hwcontext.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\hwcontext_cuda.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\hwcontext_dxva2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\hwcontext_vaapi.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\hwcontext_vdpau.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\imgutils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\intfloat.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\intreadwrite.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\lfg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\log.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\lzo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\macros.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\mastering_display_metadata.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\mathematics.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\md5.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\mem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\motion_vector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\murmur3.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\opt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\parseutils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\pixdesc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\pixelutils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\pixfmt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\random_seed.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\rational.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\rc4.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\replaygain.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\ripemd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\samplefmt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\sha.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\sha512.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\stereo3d.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\tea.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\threadmessage.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\time.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\timecode.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\timestamp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\tree.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\twofish.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\xtea.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libpostproc\postprocess.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libpostproc\version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libswresample\swresample.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libswresample\version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libswscale\swscale.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libswscale\version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\fec.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\fec_1.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\boost\deviceappender.hxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\config\macosx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\config\win32.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\config\windowsh-inc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\appenderattachableimpl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\connectorthread.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\fileinfo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\lockfile.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\loglog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\logloguser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\pointer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\property.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\queue.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\sleep.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\snprintf.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\socket.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\socketbuffer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\stringhelper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\thread-config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\timehelper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\internal\cygwin-win32.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\internal\env.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\internal\internal.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\internal\socket.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\spi\appenderattachable.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\spi\factory.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\spi\filter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\spi\loggerfactory.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\spi\loggerimpl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\spi\loggingevent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\spi\objectregistry.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\spi\rootlogger.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\thread\impl\syncprims-cxx11.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\thread\impl\syncprims-impl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\thread\impl\syncprims-pmsm.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\thread\impl\syncprims-pthreads.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\thread\impl\syncprims-win32.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\thread\impl\threads-impl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\thread\impl\tls.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\thread\syncprims-pub-impl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\thread\syncprims.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\thread\threads.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\appender.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\asyncappender.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\clfsappender.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\clogger.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\config.hxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\configurator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\consoleappender.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\fileappender.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\fstreams.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\hierarchy.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\hierarchylocker.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\layout.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\log4judpappender.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\logger.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\loggingmacros.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\loglevel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\mdc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\msttsappender.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\ndc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\nteventlogappender.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\nullappender.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\qt4debugappender.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\qt5debugappender.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\socketappender.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\streams.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\syslogappender.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\tchar.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\tracelogger.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\tstring.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\win32consoleappender.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\win32debugappender.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\HLog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="multiVideo\Capture.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">multiVideo\Capture.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -IC:/Qt/Qt5.5.1/5.5/msvc2013/mkspecs/win32-msvc2013 -ID:/Code/Qt/MultiVideoDemo -ID:/Code/Qt/MultiVideoDemo -ID:/Code/Qt/MultiVideoDemo/ffmpeg/include -ID:/Code/Qt/MultiVideoDemo/include -IC:/Qt/Qt5.5.1/5.5/msvc2013/include -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtWidgets -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtMultimedia -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtGui -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtANGLE -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtNetwork -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtCore multiVideo\Capture.h -o moc\moc_Capture.cpp
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC multiVideo/Capture.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc\moc_Capture.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">multiVideo\Capture.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -IC:/Qt/Qt5.5.1/5.5/msvc2013/mkspecs/win32-msvc2013 -ID:/Code/Qt/MultiVideoDemo -ID:/Code/Qt/MultiVideoDemo -ID:/Code/Qt/MultiVideoDemo/ffmpeg/include -ID:/Code/Qt/MultiVideoDemo/include -IC:/Qt/Qt5.5.1/5.5/msvc2013/include -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtWidgets -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtMultimedia -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtGui -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtANGLE -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtNetwork -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtCore multiVideo\Capture.h -o moc\moc_Capture.cpp
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC multiVideo/Capture.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc\moc_Capture.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="multiVideo\MultiCast.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">multiVideo\MultiCast.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -IC:/Qt/Qt5.5.1/5.5/msvc2013/mkspecs/win32-msvc2013 -ID:/Code/Qt/MultiVideoDemo -ID:/Code/Qt/MultiVideoDemo -ID:/Code/Qt/MultiVideoDemo/ffmpeg/include -ID:/Code/Qt/MultiVideoDemo/include -IC:/Qt/Qt5.5.1/5.5/msvc2013/include -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtWidgets -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtMultimedia -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtGui -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtANGLE -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtNetwork -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtCore multiVideo\MultiCast.h -o moc\moc_MultiCast.cpp
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC multiVideo/MultiCast.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc\moc_MultiCast.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">multiVideo\MultiCast.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -IC:/Qt/Qt5.5.1/5.5/msvc2013/mkspecs/win32-msvc2013 -ID:/Code/Qt/MultiVideoDemo -ID:/Code/Qt/MultiVideoDemo -ID:/Code/Qt/MultiVideoDemo/ffmpeg/include -ID:/Code/Qt/MultiVideoDemo/include -IC:/Qt/Qt5.5.1/5.5/msvc2013/include -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtWidgets -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtMultimedia -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtGui -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtANGLE -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtNetwork -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtCore multiVideo\MultiCast.h -o moc\moc_MultiCast.cpp
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC multiVideo/MultiCast.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc\moc_MultiCast.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="multiVideo\Packet.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="multiVideo\msock.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mainwindow.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -IC:/Qt/Qt5.5.1/5.5/msvc2013/mkspecs/win32-msvc2013 -ID:/Code/Qt/MultiVideoDemo -ID:/Code/Qt/MultiVideoDemo -ID:/Code/Qt/MultiVideoDemo/ffmpeg/include -ID:/Code/Qt/MultiVideoDemo/include -IC:/Qt/Qt5.5.1/5.5/msvc2013/include -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtWidgets -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtMultimedia -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtGui -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtANGLE -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtNetwork -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtCore mainwindow.h -o moc\moc_mainwindow.cpp
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC mainwindow.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc\moc_mainwindow.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -IC:/Qt/Qt5.5.1/5.5/msvc2013/mkspecs/win32-msvc2013 -ID:/Code/Qt/MultiVideoDemo -ID:/Code/Qt/MultiVideoDemo -ID:/Code/Qt/MultiVideoDemo/ffmpeg/include -ID:/Code/Qt/MultiVideoDemo/include -IC:/Qt/Qt5.5.1/5.5/msvc2013/include -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtWidgets -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtMultimedia -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtGui -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtANGLE -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtNetwork -IC:/Qt/Qt5.5.1/5.5/msvc2013/include/QtCore mainwindow.h -o moc\moc_mainwindow.cpp
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC mainwindow.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc\moc_mainwindow.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="moc\moc_Capture.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="moc\moc_MultiCast.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="moc\moc_mainwindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ui\ui_mainwindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mainwindow.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mainwindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013\bin\uic.exe mainwindow.ui -o ui\ui_mainwindow.h
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC mainwindow.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui\ui_mainwindow.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mainwindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013\bin\uic.exe mainwindow.ui -o ui\ui_mainwindow.h
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC mainwindow.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui\ui_mainwindow.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

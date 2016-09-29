@@ -1,0 +1,172 @@
+#include<stdlib.h>
+#include<stdio.h>
+#include "fec.h"
+
+#define ECC_K 4
+#define ECC_N 8
+#define ECC_C (ECC_N-ECC_K)
+#define BLK_SZ (24/ECC_K)
+
+int testFEC()
+{
+	fec_t *code;
+	char *src[ECC_K];	//用来存放数据块的数据
+	char *fecs[ECC_C];	//校验数据的指针
+	char cdata[25] = { 0 };
+	unsigned blocks[ECC_C];//用来存放校验块在整个数据中的索引
+	int i = 0;
+	char data[] = "abcdefetefetasetfgerder!";
+	int index[ECC_K] = { 4, 5, 6, 7 };
+	char *in_recovery[ECC_K];
+	char *out_recovery[ECC_K];
+	char buf_recovery[ECC_K*BLK_SZ + 1];
+
+	code = fec_new(ECC_K, ECC_N);
+
+	//初始化数据块数据
+	for (i = 0; i < ECC_K; i++)
+	{
+		//这里是存储的是六个数据节点中的数据，就是相当于把data的数据分散到了六个数据节点上面。
+		//然后src【i】各存一个数据节点中的数据
+		src[i] = data + BLK_SZ*i;
+	}
+
+	//初始化校验块
+	for (i = 0; i < ECC_C; i++)
+	{
+		blocks[i] = ECC_K + i;
+		fecs[i] = cdata + i*BLK_SZ;
+	}
+
+	printf("the src   is: %s\n", *src);
+	printf("the cdata is: %s\n", cdata);
+	printf("the fecs  is: %s\n", *fecs);
+	for (i = 0; i < ECC_C; i++)
+	{
+		printf("the blocks is:%d\n", blocks[i]);	//这是整数
+	}
+
+	fec_encode(code, src, fecs, blocks, ECC_C, BLK_SZ);
+	printf("the src is %s\n", *src);
+	printf("the encode is end!\n");
+
+
+
+
+	//-------------------------------------------------------------------------------------
+	// decode
+
+	for (i = 0; i < ECC_K; i++)
+	{	//这种情况就是在四个数据块都出现错误的时候的进行的恢复
+		in_recovery[i] = fecs[i];
+		out_recovery[i] = buf_recovery + i*BLK_SZ;
+	}
+
+	fec_decode(code, in_recovery, out_recovery, index, BLK_SZ);
+	buf_recovery[ECC_K*BLK_SZ] = '\0';
+	printf("Recovery is :%s\n", buf_recovery);
+
+
+	//注意这里的buf_recovery的内容是出现错误的数据块的数据，在这里是D1、D2、D3、D4的数据
+
+	//以下验证的是D1、D4、C1、C2四个块出错然后进行恢复的代码
+	printf("the second deconde!\n");
+	/*
+	index[0]=6;
+	index[1]=1;
+	index[2]=2;
+	index[3]=7;
+	memset(buf_recovery,0,sizeof(buf_recovery));
+	in_recovery[0] = fecs[2];
+	in_recovery[1] = data+1*BLK_SZ;
+	in_recovery[2] = data+2*BLK_SZ;
+	in_recovery[3] = fecs[3];
+	*/
+
+	//以下验证的是D2、D3、C1、C2四个块出错然后进行恢复的代码
+	//其中恢复的结果是恢复出错的块的数据
+	index[0] = 0;
+	index[1] = 6;
+	index[2] = 7;
+	index[3] = 3;
+	memset(buf_recovery, 0, sizeof(buf_recovery));
+	in_recovery[0] = data + 0 * BLK_SZ;
+	in_recovery[1] = fecs[2];
+	in_recovery[2] = fecs[3];
+	in_recovery[3] = data + 3 * BLK_SZ;
+	for (i = 0; i < ECC_K; i++)
+	{//其中buf_recovery中存放的是出现错误的数据块的数据，在这里是D2、D3的数据
+		out_recovery[i] = buf_recovery + i*BLK_SZ;
+	}
+	fec_decode(code, in_recovery, out_recovery, index, BLK_SZ);
+	buf_recovery[ECC_K*BLK_SZ] = '\0';
+	printf("Recovery is :%s\n", buf_recovery);
+	//printf("the k=%d and n=%d ",code->k,code->n);
+	return 0;
+}
+
+
+#define K 8
+#define C 4
+#define N 12
+#define PKG_LEN  8192
+#define BLK_SIZE 1024
+
+int testFECLargeSize()
+{
+	fec_t *code;
+
+	int  i = 0;
+	char *src[K];	//用来存放数据块的数据
+	char *fecs[C];	//校验数据的指针
+	char data[PKG_LEN];	// 原始数据
+	char cdata[PKG_LEN] = { 0 };	// 校验数据
+	unsigned blocks[C];	//用来存放校验块在整个数据中的索引
+	int  index[K] = { 0, 1, 2, 3, 4, 9, 10, 11 };
+	char *in_recovery[K];
+	char *out_recovery[K];
+	char buf_recovery[K*BLK_SIZE + 1] = { 0 };
+
+
+	code = fec_new(K, N);
+
+	//初始化数据块数据
+	for (i = 0; i < K; i++)
+	{
+		src[i] = data + BLK_SIZE*i;	//这里是存储的是六个数据节点中的数据，就是相当于把data的数据分散到了六个数据节点上面。然后src【i】各存一个数据节点中的数据
+		memset(src[i], 0x30+i, BLK_SIZE);
+	}
+
+	//初始化校验块
+	for (i = 0; i < C; i++)
+	{
+		blocks[i] = K + i;
+		fecs[i]   = cdata + i*BLK_SIZE;
+	}
+
+	printf("the src   is: %s\n", *src);
+	printf("the cdata is: %s\n", cdata);
+	printf("the fecs  is: %s\n", *fecs);
+	for (i = 0; i < C; i++)
+	{	//这是整数
+		printf("the blocks is:%d\n", blocks[i]);
+	}
+
+	fec_encode(code, src, fecs, blocks, C, BLK_SIZE);
+
+	for (i = 0; i < 5; i++)
+		in_recovery[i] = src[i];
+//	in_recovery[4] = fecs[0];
+	in_recovery[5] = fecs[1];
+	in_recovery[6] = fecs[2];
+	in_recovery[7] = fecs[3];
+
+	for (i = 0; i < K; i++)
+		out_recovery[i] = buf_recovery + i*BLK_SIZE;
+
+	fec_decode(code, in_recovery, out_recovery, index, BLK_SIZE);
+
+	return 0;
+}
+
+

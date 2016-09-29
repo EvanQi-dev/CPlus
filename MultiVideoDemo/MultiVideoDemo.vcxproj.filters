@@ -1,0 +1,1633 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files\multiVideo" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="multiVideo\Capture.cpp">
+      <Filter>Source Files\multiVideo</Filter>
+    </ClCompile>
+    <ClCompile Include="multiVideo\fec.c">
+      <Filter>Source Files\multiVideo</Filter>
+    </ClCompile>
+    <ClCompile Include="multiVideo\FecPad.cpp">
+      <Filter>Source Files\multiVideo</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="multiVideo\MultiCast.cpp">
+      <Filter>Source Files\multiVideo</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="multiVideo\msock.c">
+      <Filter>Source Files\multiVideo</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\ffmpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\ffmpeg\include" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\ffmpeg\include\libavcodec" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavcodec\avcodec.h">
+      <Filter>Header Files\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="multiVideo\fec.h">
+      <Filter>Header Files\multiVideo</Filter>
+    </ClInclude>
+    <ClInclude Include="multiVideo\FecPad.h">
+      <Filter>Header Files\multiVideo</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\ffmpeg\include\libavdevice" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavdevice\avdevice.h">
+      <Filter>Header Files\ffmpeg\include\libavdevice</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\ffmpeg\include\libavformat" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavformat\avformat.h">
+      <Filter>Header Files\ffmpeg\include\libavformat</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavformat\version.h">
+      <Filter>Header Files\ffmpeg\include\libavformat</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\ffmpeg\include\libavutil" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\attributes.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\avconfig.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\avutil.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\buffer.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\channel_layout.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\common.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\cpu.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\dict.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\frame.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\log.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\opt.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\pixfmt.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\rational.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\samplefmt.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\time.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libavutil\version.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\ffmpeg\include\libswscale" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\ffmpeg\include\libswscale\swscale.h">
+      <Filter>Header Files\ffmpeg\include\libswscale</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\include" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\include\log4cplus" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\include\log4cplus\config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\config\macosx.h">
+      <Filter>Header Files\include\log4cplus\config</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\config\win32.h">
+      <Filter>Header Files\include\log4cplus\config</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\config\windowsh-inc.h">
+      <Filter>Header Files\include\log4cplus\config</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\include\log4cplus\helpers" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\helpers\lockfile.h">
+      <Filter>Header Files\include\log4cplus\helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\helpers\pointer.h">
+      <Filter>Header Files\include\log4cplus\helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\helpers\property.h">
+      <Filter>Header Files\include\log4cplus\helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\helpers\snprintf.h">
+      <Filter>Header Files\include\log4cplus\helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\helpers\thread-config.h">
+      <Filter>Header Files\include\log4cplus\helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\helpers\timehelper.h">
+      <Filter>Header Files\include\log4cplus\helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\include\log4cplus\internal" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\internal\internal.h">
+      <Filter>Header Files\include\log4cplus\internal</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\include\log4cplus\spi" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\spi\appenderattachable.h">
+      <Filter>Header Files\include\log4cplus\spi</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\spi\filter.h">
+      <Filter>Header Files\include\log4cplus\spi</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\spi\loggerfactory.h">
+      <Filter>Header Files\include\log4cplus\spi</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\spi\loggingevent.h">
+      <Filter>Header Files\include\log4cplus\spi</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\include\log4cplus\thread" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\include\log4cplus\thread\impl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\thread\impl\tls.h">
+      <Filter>Header Files\include\log4cplus\thread\impl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\thread\syncprims.h">
+      <Filter>Header Files\include\log4cplus\thread</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\thread\threads.h">
+      <Filter>Header Files\include\log4cplus\thread</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\appender.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\config.hxx">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\configurator.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\layout.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\logger.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\loggingmacros.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\loglevel.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\mdc.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\ndc.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\streams.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\tchar.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\tracelogger.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus\tstring.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\include\log4cplus.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\ffmpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\ffmpeg\include" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\ffmpeg\include\SDL" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_active.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_audio.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_byteorder.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_cdrom.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_config.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_config_dreamcast.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_config_macos.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_config_macosx.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_config_minimal.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_config_nds.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_config_os2.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_config_symbian.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_config_win32.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_copying.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_cpuinfo.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_endian.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_error.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_events.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_getenv.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_joystick.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_keyboard.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_keysym.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_loadso.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_main.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_mouse.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_mutex.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_name.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_opengl.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_platform.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_quit.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_rwops.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_stdinc.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_syswm.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_thread.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_timer.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_types.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_version.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\SDL_video.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\begin_code.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\SDL\close_code.h">
+      <Filter>Header Files\ffmpeg\include\SDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\ffmpeg\include\libavcodec" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\avcodec.h">
+      <Filter>Header Files\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\avdct.h">
+      <Filter>Header Files\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\avfft.h">
+      <Filter>Header Files\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\d3d11va.h">
+      <Filter>Header Files\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\dirac.h">
+      <Filter>Header Files\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\dv_profile.h">
+      <Filter>Header Files\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\dxva2.h">
+      <Filter>Header Files\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\jni.h">
+      <Filter>Header Files\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\mediacodec.h">
+      <Filter>Header Files\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\qsv.h">
+      <Filter>Header Files\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\vaapi.h">
+      <Filter>Header Files\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\vda.h">
+      <Filter>Header Files\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\vdpau.h">
+      <Filter>Header Files\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\version.h">
+      <Filter>Header Files\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\videotoolbox.h">
+      <Filter>Header Files\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\vorbis_parser.h">
+      <Filter>Header Files\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavcodec\xvmc.h">
+      <Filter>Header Files\ffmpeg\include\libavcodec</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\ffmpeg\include\libavdevice" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavdevice\avdevice.h">
+      <Filter>Header Files\ffmpeg\include\libavdevice</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavdevice\version.h">
+      <Filter>Header Files\ffmpeg\include\libavdevice</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\ffmpeg\include\libavfilter" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavfilter\avfilter.h">
+      <Filter>Header Files\ffmpeg\include\libavfilter</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavfilter\avfiltergraph.h">
+      <Filter>Header Files\ffmpeg\include\libavfilter</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavfilter\buffersink.h">
+      <Filter>Header Files\ffmpeg\include\libavfilter</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavfilter\buffersrc.h">
+      <Filter>Header Files\ffmpeg\include\libavfilter</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavfilter\version.h">
+      <Filter>Header Files\ffmpeg\include\libavfilter</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\ffmpeg\include\libavformat" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavformat\avformat.h">
+      <Filter>Header Files\ffmpeg\include\libavformat</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavformat\avio.h">
+      <Filter>Header Files\ffmpeg\include\libavformat</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavformat\version.h">
+      <Filter>Header Files\ffmpeg\include\libavformat</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\ffmpeg\include\libavutil" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\adler32.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\aes.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\aes_ctr.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\attributes.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\audio_fifo.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\avassert.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\avconfig.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\avstring.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\avutil.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\base64.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\blowfish.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\bprint.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\bswap.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\buffer.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\camellia.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\cast5.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\channel_layout.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\common.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\cpu.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\crc.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\des.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\dict.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\display.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\downmix_info.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\error.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\eval.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\ffversion.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\fifo.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\file.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\frame.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\hash.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\hmac.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\hwcontext.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\hwcontext_cuda.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\hwcontext_dxva2.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\hwcontext_vaapi.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\hwcontext_vdpau.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\imgutils.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\intfloat.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\intreadwrite.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\lfg.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\log.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\lzo.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\macros.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\mastering_display_metadata.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\mathematics.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\md5.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\mem.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\motion_vector.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\murmur3.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\opt.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\parseutils.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\pixdesc.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\pixelutils.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\pixfmt.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\random_seed.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\rational.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\rc4.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\replaygain.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\ripemd.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\samplefmt.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\sha.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\sha512.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\stereo3d.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\tea.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\threadmessage.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\time.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\timecode.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\timestamp.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\tree.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\twofish.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\version.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libavutil\xtea.h">
+      <Filter>Header Files\ffmpeg\include\libavutil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\ffmpeg\include\libpostproc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libpostproc\postprocess.h">
+      <Filter>Header Files\ffmpeg\include\libpostproc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libpostproc\version.h">
+      <Filter>Header Files\ffmpeg\include\libpostproc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\ffmpeg\include\libswresample" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libswresample\swresample.h">
+      <Filter>Header Files\ffmpeg\include\libswresample</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libswresample\version.h">
+      <Filter>Header Files\ffmpeg\include\libswresample</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\ffmpeg\include\libswscale" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libswscale\swscale.h">
+      <Filter>Header Files\ffmpeg\include\libswscale</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\libswscale\version.h">
+      <Filter>Header Files\ffmpeg\include\libswscale</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\fec.h">
+      <Filter>Header Files\ffmpeg\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ffmpeg\include\fec_1.h">
+      <Filter>Header Files\ffmpeg\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\include" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\include\log4cplus" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\include\log4cplus\boost" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\boost\deviceappender.hxx">
+      <Filter>Header Files\include\log4cplus\boost</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\include\log4cplus\config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\config\macosx.h">
+      <Filter>Header Files\include\log4cplus\config</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\config\win32.h">
+      <Filter>Header Files\include\log4cplus\config</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\config\windowsh-inc.h">
+      <Filter>Header Files\include\log4cplus\config</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\include\log4cplus\helpers" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\appenderattachableimpl.h">
+      <Filter>Header Files\include\log4cplus\helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\connectorthread.h">
+      <Filter>Header Files\include\log4cplus\helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\fileinfo.h">
+      <Filter>Header Files\include\log4cplus\helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\lockfile.h">
+      <Filter>Header Files\include\log4cplus\helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\loglog.h">
+      <Filter>Header Files\include\log4cplus\helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\logloguser.h">
+      <Filter>Header Files\include\log4cplus\helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\pointer.h">
+      <Filter>Header Files\include\log4cplus\helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\property.h">
+      <Filter>Header Files\include\log4cplus\helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\queue.h">
+      <Filter>Header Files\include\log4cplus\helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\sleep.h">
+      <Filter>Header Files\include\log4cplus\helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\snprintf.h">
+      <Filter>Header Files\include\log4cplus\helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\socket.h">
+      <Filter>Header Files\include\log4cplus\helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\socketbuffer.h">
+      <Filter>Header Files\include\log4cplus\helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\stringhelper.h">
+      <Filter>Header Files\include\log4cplus\helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\thread-config.h">
+      <Filter>Header Files\include\log4cplus\helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\helpers\timehelper.h">
+      <Filter>Header Files\include\log4cplus\helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\include\log4cplus\internal" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\internal\cygwin-win32.h">
+      <Filter>Header Files\include\log4cplus\internal</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\internal\env.h">
+      <Filter>Header Files\include\log4cplus\internal</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\internal\internal.h">
+      <Filter>Header Files\include\log4cplus\internal</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\internal\socket.h">
+      <Filter>Header Files\include\log4cplus\internal</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\include\log4cplus\spi" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\spi\appenderattachable.h">
+      <Filter>Header Files\include\log4cplus\spi</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\spi\factory.h">
+      <Filter>Header Files\include\log4cplus\spi</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\spi\filter.h">
+      <Filter>Header Files\include\log4cplus\spi</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\spi\loggerfactory.h">
+      <Filter>Header Files\include\log4cplus\spi</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\spi\loggerimpl.h">
+      <Filter>Header Files\include\log4cplus\spi</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\spi\loggingevent.h">
+      <Filter>Header Files\include\log4cplus\spi</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\spi\objectregistry.h">
+      <Filter>Header Files\include\log4cplus\spi</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\spi\rootlogger.h">
+      <Filter>Header Files\include\log4cplus\spi</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\include\log4cplus\thread" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\include\log4cplus\thread\impl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\thread\impl\syncprims-cxx11.h">
+      <Filter>Header Files\include\log4cplus\thread\impl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\thread\impl\syncprims-impl.h">
+      <Filter>Header Files\include\log4cplus\thread\impl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\thread\impl\syncprims-pmsm.h">
+      <Filter>Header Files\include\log4cplus\thread\impl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\thread\impl\syncprims-pthreads.h">
+      <Filter>Header Files\include\log4cplus\thread\impl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\thread\impl\syncprims-win32.h">
+      <Filter>Header Files\include\log4cplus\thread\impl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\thread\impl\threads-impl.h">
+      <Filter>Header Files\include\log4cplus\thread\impl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\thread\impl\tls.h">
+      <Filter>Header Files\include\log4cplus\thread\impl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\thread\syncprims-pub-impl.h">
+      <Filter>Header Files\include\log4cplus\thread</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\thread\syncprims.h">
+      <Filter>Header Files\include\log4cplus\thread</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\thread\threads.h">
+      <Filter>Header Files\include\log4cplus\thread</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\appender.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\asyncappender.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\clfsappender.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\clogger.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\config.hxx">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\configurator.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\consoleappender.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\fileappender.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\fstreams.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\hierarchy.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\hierarchylocker.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\layout.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\log4judpappender.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\logger.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\loggingmacros.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\loglevel.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\mdc.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\msttsappender.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\ndc.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\nteventlogappender.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\nullappender.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\qt4debugappender.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\qt5debugappender.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\socketappender.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\streams.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\syslogappender.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\tchar.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\tracelogger.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\tstring.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\version.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\win32consoleappender.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus\win32debugappender.h">
+      <Filter>Header Files\include\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\HLog.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\log4cplus.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\multiVideo" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="multiVideo\Capture.h">
+      <Filter>Header Files\multiVideo</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="multiVideo\MultiCast.h">
+      <Filter>Header Files\multiVideo</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="multiVideo\Packet.h">
+      <Filter>Header Files\multiVideo</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="multiVideo\msock.h">
+      <Filter>Header Files\multiVideo</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mainwindow.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Generated Files\moc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="moc\moc_Capture.cpp">
+      <Filter>Generated Files\moc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="moc\moc_MultiCast.cpp">
+      <Filter>Generated Files\moc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="moc\moc_mainwindow.cpp">
+      <Filter>Generated Files\moc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Generated Files\ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ui\ui_mainwindow.h">
+      <Filter>Generated Files\ui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mainwindow.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
