@@ -257,13 +257,6 @@ int FecUnpad()
 				fec_decode(code[fecK-1], (const gf **)lpInRecov, lpOutRecov, fecIndex, fecPageLen);
 				for(i=0; i<k; i++) {
 					memcpy(padBuf+(fecRecov[i]*fecPageLen), lpOutRecov[i], fecPageLen);
-					for(j=0; j<16; j++) {
-						if(*(lpOutRecov[i]+j) != 0)
-							break;
-					}
-					if( j == 16 ) {
-						printf("error\n");
-					}
 				}
 			}
 
