@@ -12,7 +12,6 @@
 #include "fec.h"
 #include "debug.h"
 
-
 static char headerMark[5] = "bszh";
 
 static char *padBuf = NULL;
@@ -189,10 +188,10 @@ int FecUnpad()
 		fecN = header.fecN;
 		fecPageLen = header.fecPageLen;
 		pageCntOfRecvBlk = 1;
-
+#if DEBUG
 		printf("pktsSerialNo: %d blkSerialNo: %d blkOffset: %d fecK: %d fecN: %d fecPageLen: %d\n", pktsSerialNo, blkSerialNo, blkOffset, fecK, fecN, fecPageLen);
 		printf("pageIndex: %d pageSerialNo: %d padOfs: %d\n",recvInfo.index, header.pageSerialNo, padOfs);
-
+#endif
 		memcpy(padBuf+padOfs, recvPage+sizeof(PageHeader)+header.pktCnt*sizeof(PacketInfo), header.fecPageLen);
 		startFlag = 1;
 		return SUCCESS;
@@ -204,8 +203,10 @@ int FecUnpad()
 		// 新收到的page属于另外一个block，处理上一个block
 		// 判断是否满足FEC纠错
 		if(pageCntOfRecvBlk < fecK) {
+#if DEBUG
 			printf("lost too many page, recv: %d send: %d\n\n", pageCntOfRecvBlk, fecN);
 			printf("maxPageNo: %d\n", maxPageNo);
+#endif
 			// 收到的page太少，无法恢复，只能将收到的数据部分复制
 			for(i=0; i<=maxPageNo; i++) {
 				pageInfo = lPageInfo[i];
@@ -224,10 +225,6 @@ int FecUnpad()
 		} else {
 			// page数足够纠错
 			int needFec = 0;
-
-			if( (fecN-pageCntOfRecvBlk)>2 && (fecN > 8) ) {
-				printf("half error\n");
-			}
 
 			j = fecK;
 			k = 0;
@@ -254,7 +251,9 @@ int FecUnpad()
 
 			// FEC纠错
 			if(needFec) {
+#if DEBUG
 				printf("need fec\n");
+#endif
 				fec_decode(code[fecK-1], (const gf **)lpInRecov, lpOutRecov, fecIndex, fecPageLen);
 				for(i=0; i<k; i++) {
 					memcpy(padBuf+(fecRecov[i]*fecPageLen), lpOutRecov[i], fecPageLen);
@@ -269,18 +268,10 @@ int FecUnpad()
 			}
 
 			// 复制恢复数据到unpadBuf
+#if DEBUG
 			printf("copy block data blkOffset: %d len: %d\n\n", blkOffset, fecK*fecPageLen);
+#endif
 			memcpy(unpadBuf+blkOffset, padBuf, fecK*fecPageLen);
-
-			for(i=0; i<fecK; i++) {
-				for(j=0; j<16; j++) {
-					if(*(unpadBuf+blkOffset+i*fecPageLen+j) != 0)
-						break;
-				}
-				if( j == 16 ) {
-					printf("error\n");
-				}
-			}
 
 			r = SUCCESS;
 		}
@@ -306,7 +297,9 @@ int FecUnpad()
 
 		// 保存到文件中，测试正确性
 		if(fTest != -1) {
+#if DEBUG
 			printf("Write file: offset: %d size: %d\n", fTestOffset, pktsInfo.totalSize);
+#endif
 			write(fTest, unpadBuf, pktsInfo.totalSize);
 			fTestOffset += pktsInfo.totalSize;
 		}
@@ -315,8 +308,9 @@ int FecUnpad()
 		for(i=0 ; i<pktsInfo.pktCnt; i++) {
 			// unpadBuf+lInfo[i].offset lInfo[i].size
 		}
-
+#if DEBUG
 		printf("New pkts: pktsSerialNo: %d\n", header.pktsSerialNo);
+#endif
 
 		// 初始化buf
 		memset(unpadBuf, 0, UNPAD_BUF_LEN);
@@ -329,12 +323,13 @@ int FecUnpad()
 		pktsSerialNo = header.pktsSerialNo;
 	}
 
+#if DEBUG
 	if(pageCntOfRecvBlk == 0) {
 		printf("new blkSerialNo: %d\n", header.blkSerialNo);
 		printf("pktsSerialNo: %d blkSerialNo: %d blkOffset: %d fecK: %d fecN: %d fecPageLen: %d\n", pktsSerialNo, blkSerialNo, blkOffset, fecK, fecN, fecPageLen);
 	}
-
 	printf("pageIndex: %d pageSerialNo: %d padOfs: %d\n",recvInfo.index, header.pageSerialNo, padOfs);
+#endif
 
 	lPageInfo[header.pageSerialNo].h = header;
 	lPageInfo[header.pageSerialNo].data = padBuf + padOfs;
@@ -344,17 +339,6 @@ int FecUnpad()
 
 	pageCntOfRecvBlk += 1;
 	memcpy(padBuf+padOfs, recvPage+sizeof(PageHeader)+header.pktCnt*sizeof(PacketInfo), header.fecPageLen);
-#if 0
-	{
-		printf("padOfs: %d\n", padOfs);
-		printf("recvPage: %lx\n", recvPage);
-		int tt;
-		for(tt=0; tt<16; tt++) {
-			printf("%x ", (unsigned char)*(padBuf+padOfs+tt));
-		}
-		printf("\n");
-	}
-#endif
 
 	return r;
 }
